@@ -3,15 +3,8 @@ import { exp } from "./exp"
 describe('exp unit tests', () => {
     
     it('Should pow 2 ^ 0 = 1', () => {
-        // Pattern AAA (Arrange - Act - Assert)
-
-        // Arrange
         let result = 0;
-        
-        // Act
         result = exp(2, 0);
-
-        // Assert
         expect(result).toBe(1);
     })
 
