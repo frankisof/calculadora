@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { addition } from "../addition/addition"
 import { substraction } from '../substraction/substraction';
+import {logaritmo} from '../logaritmo/logaritmo'
 
 @Component({
   selector: 'app-ui',
@@ -28,6 +29,13 @@ export class UiComponent implements OnInit {
     let myresult =0;
     myresult = substraction(this.operator1, this.operator2);
     this.result=myresult;
+  }
+
+  logaritmo(){
+    let myresult =0;
+    myresult = logaritmo(this.operator1, this.operator2);
+    this.result=myresult;
+
   }
 
 }
