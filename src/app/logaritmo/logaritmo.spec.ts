@@ -1,7 +1,7 @@
 import { logaritmo } from "./logaritmo"
 
 describe('logaritmo unit tests', () => {
-    xit('should calculate the natural logarithm of 19', () => {
+    it('should calculate the natural logarithm of 19', () => {
         const result = logaritmo(19,0);
         expect(result).toBe(Math.log(19));
       });
@@ -11,9 +11,9 @@ describe('logaritmo unit tests', () => {
         expect(result).toBeCloseTo(Math.log(2));
       });
     
-      xit('should return NaN for the natural logarithm of -1', () => {
-        const result = logaritmo(19,0);
-        expect(result).toBeNaN();
+      xit('should return NaN for the natural logarithm of 8', () => {
+        const result = logaritmo(8,0);
+        expect(result).toBeCloseTo(Math.log(8));
       });
     });
    

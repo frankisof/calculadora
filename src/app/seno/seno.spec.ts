@@ -2,44 +2,22 @@ import { seno } from "./seno"
 
 describe('sqr unit tests', () => {
     
-    xit('Should compute 2 ^ 2 = 4', () => {
-        // Pattern AAA (Arrange - Act - Assert)
-
-        // Arrange
-        let result = 0;
-        
-        // Act
-        result = seno(2);
-
-        // Assert
-        expect(result).toBe(4);
+    it('calcular seno de 8', () => {
+        let numero = 8;
+        let result = seno(numero);
+        expect(result).toBeCloseTo(0.1391731);
     })
 
-    xit('Should compute 3 ^ 2 = 9', () => {
-        // Arrange
-        let result = 0;
-        // Act
-        result = seno(3);
-        // Assert
-        expect(result).toBe(9);
+    it('calcular coseno de 26', () => {
+        let numero = 26;
+        let result = seno(numero);
+        expect(result).toBeCloseTo(0.98480775);
     })
 
-    xit('Should compute 4 ^ 2 = 16', () => {
-        // Arrange
-        let result = 0;
-        // Act
-        result = seno(4);
-        // Assert
-        expect(result).toBe(16);
-    })
-
-    xit('Should compute 5 ^ 2 = 25', () => {
-        // Arrange
-        let result = 0;
-        // Act
-        result = seno(5);
-        // Assert
-        expect(result).toBe(25);
+    it('calcular coseno de 99', () => {
+        let numero = 99;
+        let result = seno(numero);
+        expect(result).toBeCloseTo(0.98768834);
     })
 
    

@@ -2,44 +2,22 @@ import { tangente } from "./tangente"
 
 describe('division unit tests', () => {
     
-    xit('Should divide 2 / 2 = 1', () => {
-        // Pattern AAA (Arrange - Act - Assert)
-
-        // Arrange
-        let result = 0;
-        
-        // Act
-        result = tangente(2, 2);
-
-        // Assert
-        expect(result).toBe(1);
+    it('calcular coseno de 66', () => {
+        let numero = 66;
+        let result = tangente(numero, 0);
+        expect(result).toBeCloseTo(2.2460367739042164);
     })
 
-    xit('Should divide 9 / 2 = 4.5', () => {
-        // Arrange
-        let result = 0;
-        // Act
-        result = tangente(9, 2);
-        // Assert
-        expect(result).toBe(4.5);
+    it('calcular coseno de 74', () => {
+        let numero = 74;
+        let result = tangente(numero, 0);
+        expect(result).toBeCloseTo(3.4874144438409087);
     })
 
-    xit('Should divide 3.0 / 0.5 = 6.0', () => {
-        // Arrange
-        let result = 0;
-        // Act
-        result = tangente(3.0, 0.5);
-        // Assert
-        expect(result).toBe(6.0);
-    })
-
-    xit(' Should divide 0 / 1 = 0', () => {
-        // Arrange
-        let result = 0;
-        // Act
-        result = tangente(0, 1);
-        // Assert
-        expect(result).toBe(0);
+    it('calcular coseno de 999', () => {
+        let numero = 999;
+        let result = tangente(numero, 0);
+        expect(result).toBeCloseTo(-6.313751514675107);
     })
 
 })
