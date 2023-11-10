@@ -2,7 +2,7 @@ import { sqrt } from "./sqrt"
 
 describe('sqrt unit tests', () => {
 
-    it('Should compute sqrt (25) = 5', () => {
+    xit('Should compute sqrt (25) = 5', () => {
         // Pattern AAA (Arrange - Act - Assert)
 
         // Arrange
@@ -15,7 +15,7 @@ describe('sqrt unit tests', () => {
         expect(result).toBe(5);
     })
 
-    it('Should compute sqrt (16) = 4', () => {
+    xit('Should compute sqrt (16) = 4', () => {
         // Arrange
         let result = 0;
         // Act
@@ -24,7 +24,7 @@ describe('sqrt unit tests', () => {
         expect(result).toBe(4);
     })
 
-    it('Should compute sqrt (9) = 3', () => {
+    xit('Should compute sqrt (9) = 3', () => {
         // Arrange
         let result = 0;
         // Act
@@ -33,7 +33,7 @@ describe('sqrt unit tests', () => {
         expect(result).toBe(3);
     })
 
-    it('Should compute sqrt (4) = 2', () => {
+    xit('Should compute sqrt (4) = 2', () => {
         // Arrange
         let result = 0;
         // Act

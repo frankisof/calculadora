@@ -1,36 +1,54 @@
 .calculator {
-    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw; /* 100% del ancho de la ventana */
+    height: 30vh; /* 100% de la altura de la ventana */
     text-align: center;
-    color: #999;
+    color: #000000;
+    position: relative;
+    background-image: url('calculadora.jpg'); /* Cambia 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
 }
 
-.result {
-    font-size: 3.0em;
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    left: 300px; /* Ajusta el valor de right según sea necesario */
+}
+
+.operation-button {
+    padding: 10px;
+    font-size: 1.2em;
     font-weight: bold;
-    color: red;
-
-}
-
-.operator1 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: black;
-
-}
-
-.operator2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: blue;
-
-}
-
-.addition-button {
     cursor: pointer;
-    color: blue;
-}
-.substraction-button {
-    cursor: pointer;
-    color: green;
+    background-color: #3498db;
+    color: rgb(255, 0, 0);
+    border: 2px solid #b92929;
+    border-radius: 5px;
+    width: 30px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
+.button-description {
+    font-size: 0.8em;
+    color: #030303;
+}
+
+.background-image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

@@ -2,7 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { addition } from "../addition/addition"
 import { substraction } from '../substraction/substraction';
 import {logaritmo} from '../logaritmo/logaritmo'
-
+import { tangente } from '../tangente/tangente';
+import { coseno } from '../coseno/coseno';
+import { multiplication } from '../multiplication/multiplication';
+import { seno } from '../seno/seno';
 @Component({
   selector: 'app-ui',
   templateUrl: './ui.component.html',
@@ -37,5 +40,28 @@ export class UiComponent implements OnInit {
     this.result=myresult;
 
   }
+  tangente(){
+    let myresult =0;
+    myresult = tangente(this.operator1, this.operator2);
+    this.result=myresult;
+
+  }
+coseno(){
+let result = 0;
+result = coseno(this.operator1, this.operator2);
+this.result=result;
+}
+mutiplicacion(){
+  let result = 0;
+  result = multiplication(this.operator1, this.operator2);
+  this.result=result;
+
+}
+seno(){
+  let result = 0;
+  result = seno(this.operator1);
+  this.result=result;
+
+}
 
 }
